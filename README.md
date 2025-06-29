@@ -6,5 +6,5 @@ Compile Steps:
 - make 
 - ./cvrp
 
-\n or just 
+or just 
 ./run_build.sh
