@@ -5,3 +5,6 @@ Compile Steps:
 - cmake ..
 - make 
 - ./cvrp
+
+\n or just 
+./run_build.sh
