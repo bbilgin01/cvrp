@@ -8,4 +8,4 @@ Compile Steps:
 
 or just 
 
-./run_build.sh
+- ./run_build.sh
