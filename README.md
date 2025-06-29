@@ -1,4 +1,4 @@
-- Compile Steps
+Compile Steps: 
 - cd vrp
 - mkdir build
 - cd build
