@@ -24,7 +24,6 @@ int main(int argc, char* argv[]){
     for(const auto& c : v1.route){
         cout << " Müşteri " << c.id << "( Load: " << c.demand <<")\n";    
     }
-    
     cout << "Total load: " << v1.load << "\n";
     return 0; 
 }

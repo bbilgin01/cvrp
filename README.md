@@ -1,7 +1,7 @@
 - Compile Steps
-cd vrp
-mkdir build
-cd build
-cmake ..
-make 
-./cvrp
+- cd vrp
+- mkdir build
+- cd build
+- cmake ..
+- make 
+- ./cvrp
