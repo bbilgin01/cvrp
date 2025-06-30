@@ -1,5 +1,5 @@
 #include <iostream>
-#include "routing_data.hpp"
+#include "solver.hpp"
 
 using namespace std;
 
@@ -8,14 +8,17 @@ int main(int argc, char* argv[]){
     RoutingData data(depot);
     
     data.add_customer(Customer(1, 1.0, 1.0, 2));
-    data.add_customer(Customer(2, -1.5, 2.0, 3));
-    data.add_customer(Customer(3, 0.0, -3.0, 1));
+    data.add_customer(Customer(2, 2.0, 0.0, 4));
+    data.add_customer(Customer(3, -1.0, -1.0, 3));
+    data.add_customer(Customer(4, -2.0, 2.0, 2));
+    data.add_customer(Customer(5, 0.0, 3.0, 1));
 
-    cout<<  "Customer List:\n";
-    for(const auto& c : data.customers){
-        cout << " ID: "<< c.id << " at Location: (" <<c.x<<","<<c.y<<"), Demand: "<< c.demand<< "\n";
-    }
-
+    int vehicle_count = 2;
+    int vehicle_capacity = 6;
+    Solver solver(data, vehicle_count, vehicle_capacity);
+    solver.solve();
+    solver.print_solution();
+    
     return 0; 
 }
 
