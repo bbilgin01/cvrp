@@ -14,5 +14,4 @@ public :
     Solver(const RoutingData& data_, int vehicle_count, int vehicle_capacity);
     void solve();
     void print_solution()const; 
-
 };
